@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.projects {
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.zoom {
+    transition: transform .5s;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+#intro {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+#typing-text {
+    overflow: hidden;
+    border-right: 4px solid orange;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    width: 0;
+    animation: 
+        typing 2s steps(18) forwards,
+        blinking 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinking {
+    50% { border-color: transparent; }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to { opacity: 1 }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-auto-rows: 225px;
+    }
+}
