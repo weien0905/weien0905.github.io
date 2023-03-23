@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+    color: white;
+}
+
 .projects {
     display: grid;
-    grid-auto-rows: 300px;
+    grid-auto-rows: 280px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
