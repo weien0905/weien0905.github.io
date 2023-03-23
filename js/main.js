@@ -6,8 +6,9 @@ const navitems = document.querySelectorAll('nav ul li');
 const setActiveSection = () => {
     {
         let curr;
+        let top = sections[0].offsetTop;
         sections.forEach(section => {
-            if (scrollY >= section.offsetTop + 56) {
+            if (scrollY >= section.offsetTop - top) {
                 curr = section.getAttribute('id');
             } 
         })
