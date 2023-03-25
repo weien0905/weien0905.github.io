@@ -2,6 +2,7 @@ const typing = document.querySelector('#typing-text');
 const intro = document.querySelector('#intro');
 const sections = document.querySelectorAll('section');
 const navitems = document.querySelectorAll('nav ul li');
+const projects = document.querySelectorAll('.hidden-project');
 
 const setActiveSection = () => {
     {
@@ -30,3 +31,14 @@ window.addEventListener('scroll', setActiveSection);
 typing.addEventListener('animationend', () => {
     intro.style.animationPlayState = 'running';
 })
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-project');
+        }
+    })
+})
+
+projects.forEach(project => observer.observe(project));
+

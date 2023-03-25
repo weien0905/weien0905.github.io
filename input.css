@@ -62,3 +62,14 @@
         grid-auto-rows: 225px;
     }
 }
+
+.hidden-project {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show-project {
+    filter: blur(0);
+    opacity: 1;
+}

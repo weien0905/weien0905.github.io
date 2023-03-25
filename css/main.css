@@ -708,8 +708,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pt-16 {
@@ -718,22 +718,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -851,6 +835,17 @@ video {
   .projects {
     grid-auto-rows: 225px;
   }
+}
+
+.hidden-project {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.show-project {
+  filter: blur(0);
+  opacity: 1;
 }
 
 .hover\:text-white:hover {
