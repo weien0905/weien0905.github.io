@@ -66,7 +66,7 @@
 .hidden-project {
     opacity: 0;
     filter: blur(5px);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .show-project {
