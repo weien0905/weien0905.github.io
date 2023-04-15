@@ -846,12 +846,14 @@ video {
 
 .hidden-project {
   opacity: 0;
-  filter: blur(5px);
+  /* filter: blur(5px); */
+  transform: translateX(-10%);
   transition: all 1s;
 }
 
 .show-project {
-  filter: blur(0);
+  /* filter: blur(0); */
+  transform: translateX(0%);
   opacity: 1;
 }
 
