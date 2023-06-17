@@ -28,16 +28,15 @@ const setActiveSection = () => {
 
 document.addEventListener('DOMContentLoaded', setActiveSection);
 window.addEventListener('scroll', setActiveSection);
-typing.addEventListener('animationend', () => {
-    intro.style.animationPlayState = 'running';
-})
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show-project');
+const observer = new IntersectionObserver(async (entries) => {
+    for (let i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+            await new Promise(r => setTimeout(r, 200));
+            entries[i].target.classList.add('show-project');        
         }
-    })
+        
+    }
 })
 
 projects.forEach(project => observer.observe(project));
