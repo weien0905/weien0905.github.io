@@ -14,7 +14,9 @@
 }
 
 .zoom:hover {
-    transform: scale(1.08);
+    -moz-box-shadow: 0 0 20px white;
+    -webkit-box-shadow: 0 0 20px white;
+    box-shadow: 0 0 20px #ccc;
 }
 
 #typing-text {
@@ -63,4 +65,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#profile-pic {
+    transition: all 1s;
+}
+
+#profile-pic:hover {
+    transform: scale(1.05);
 }

@@ -783,7 +783,7 @@ video {
 }
 
 .zoom:hover {
-  transform: scale(1.08);
+  box-shadow: 0 0 20px #ccc;
 }
 
 #typing-text {
@@ -840,6 +840,14 @@ video {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#profile-pic {
+  transition: all 1s;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
 }
 
 .hover\:text-white:hover {
