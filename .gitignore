@@ -3,4 +3,3 @@ node_modules/
 .github
 .firebaserc
 firebase.json
-js/firebase.js
