@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .active {
     color: white;
 }
@@ -25,7 +29,7 @@
     padding-right: 2px;
     border-right: 3px solid orange;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
     width: 0;
     animation: 
@@ -46,17 +50,19 @@
     .projects {
         grid-auto-rows: 225px;
     }
+
+    #typing-text {
+        font-size: 28px;
+    }
 }
 
-.hidden-project {
+.hidden-div {
     opacity: 0;
-    /* filter: blur(5px); */
     transform: translateX(-10%);
     transition: all 1s;
 }
 
-.show-project {
-    /* filter: blur(0); */
+.show-div {
     transform: translateX(0%);
     opacity: 1;
 }
@@ -73,4 +79,48 @@
 
 #profile-pic:hover {
     transform: scale(1.05);
+}
+
+.arrows path {
+	stroke: gainsboro;
+	fill: transparent;
+	stroke-width: 4px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+@-webkit-keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+.emoji {
+    font-size: 200px;
+}
+
+.show-delay {
+    transition-delay: 200ms;
 }

@@ -2,7 +2,7 @@ const typing = document.querySelector('#typing-text');
 const intro = document.querySelector('#intro');
 const sections = document.querySelectorAll('section');
 const navitems = document.querySelectorAll('nav ul li');
-const projects = document.querySelectorAll('.hidden-project');
+const projects = document.querySelectorAll('.hidden-div');
 
 const setActiveSection = () => {
     {
@@ -33,7 +33,7 @@ const observer = new IntersectionObserver(async (entries) => {
     for (let i = 0; i < entries.length; i++) {
         if (entries[i].isIntersecting) {
             await new Promise(r => setTimeout(r, 200));
-            entries[i].target.classList.add('show-project');        
+            entries[i].target.classList.add('show-div');        
         }
         
     }

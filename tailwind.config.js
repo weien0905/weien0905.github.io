@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'opensans': ['Open Sans', 'sans-serif']
+        'ssfont': ['Figtree', 'sans-serif']
       },
       colors: {
         'dark': '#0d1117'
