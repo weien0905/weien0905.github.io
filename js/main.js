@@ -14,7 +14,7 @@ const setActiveSection = () => {
             } 
         })
         // If scroll to the end, make the last section active
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        if (window.innerHeight + window.scrollY + 2 >= document.body.offsetHeight) {
             curr = navitems[navitems.length - 1].querySelector('a').getAttribute('href').slice(1);
         }
         navitems.forEach(item => {
