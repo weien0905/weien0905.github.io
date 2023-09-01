@@ -41,3 +41,4 @@ const observer = new IntersectionObserver(async (entries) => {
 
 projects.forEach(project => observer.observe(project));
 
+fetch("https://limweien.pythonanywhere.com/ping");
