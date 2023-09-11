@@ -1,5 +1,6 @@
 const routes = {
     "/github": "https://github.com/weien0905",
+    "/linkedin": "https://www.linkedin.com/in/lim-wei-en/",
     "/vartemplate": "https://vartemplate.web.app/",
     "/drcr": "https://drcr.pythonanywhere.com/",
     "/sudoku": "https://sudokuvisualiser.web.app/"
