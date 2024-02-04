@@ -2,7 +2,9 @@ const typing = document.querySelector('#typing-text');
 const intro = document.querySelector('#intro');
 const sections = document.querySelectorAll('section');
 const navitems = document.querySelectorAll('nav ul li');
-const projects = document.querySelectorAll('.hidden-div');
+const projects = document.querySelectorAll('.hidden-project');
+const descriptions = document.querySelectorAll('.hidden-description');
+const logos = document.querySelectorAll('.hidden-logo');
 
 const setActiveSection = () => {
     {
@@ -29,16 +31,39 @@ const setActiveSection = () => {
 document.addEventListener('DOMContentLoaded', setActiveSection);
 window.addEventListener('scroll', setActiveSection);
 
-const observer = new IntersectionObserver(async (entries) => {
+const project_observer = new IntersectionObserver(async (entries) => {
     for (let i = 0; i < entries.length; i++) {
         if (entries[i].isIntersecting) {
             await new Promise(r => setTimeout(r, 200));
-            entries[i].target.classList.add('show-div');        
+            entries[i].target.classList.add('show-project');        
         }
         
     }
 })
 
-projects.forEach(project => observer.observe(project));
+const description_observer = new IntersectionObserver(async (entries) => {
+    for (let i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+            await new Promise(r => setTimeout(r, 500));
+            entries[i].target.classList.add('show-logo');        
+        }
+        
+    }
+})
+
+const logo_observer = new IntersectionObserver(async (entries) => {
+    for (let i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+            await new Promise(r => setTimeout(r, 300));
+            entries[i].target.classList.add('show-logo');        
+        }
+        
+    }
+})
+
+projects.forEach(project => project_observer.observe(project));
+descriptions.forEach(description => description_observer.observe(description));
+logos.forEach(logo => logo_observer.observe(logo));
+
 
 fetch("https://limweien.pythonanywhere.com/ping");

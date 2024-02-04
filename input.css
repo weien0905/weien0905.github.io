@@ -56,13 +56,35 @@ html {
     }
 }
 
-.hidden-div {
+.hidden-project {
     opacity: 0;
     transform: translateX(-10%);
     transition: all 1s;
 }
 
-.show-div {
+.show-project {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.hidden-description {
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 1s;
+}
+
+.show-description {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.hidden-logo {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show-logo {
     transform: translateX(0%);
     opacity: 1;
 }
