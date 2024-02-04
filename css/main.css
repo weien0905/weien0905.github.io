@@ -612,10 +612,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -928,6 +924,11 @@ html {
 
 .show-delay {
   transition-delay: 200ms;
+}
+
+.full-screen {
+  height: 100vh;
+  height: 100dvh;
 }
 
 .hover\:text-white:hover {

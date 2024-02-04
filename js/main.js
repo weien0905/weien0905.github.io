@@ -65,5 +65,4 @@ projects.forEach(project => project_observer.observe(project));
 descriptions.forEach(description => description_observer.observe(description));
 logos.forEach(logo => logo_observer.observe(logo));
 
-
 fetch("https://limweien.pythonanywhere.com/ping");
