@@ -785,8 +785,13 @@ html {
   gap: 20px;
 }
 
+.zoom {
+  box-shadow: 0 0 12px #1f2937;
+}
+
 .zoom:hover {
-  box-shadow: 0 0 20px #ccc;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #d1d5db;
 }
 
 #typing-text {
@@ -928,7 +933,6 @@ html {
 
 .full-screen {
   height: 100vh;
-  height: 100dvh;
 }
 
 .hover\:text-white:hover {

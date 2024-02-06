@@ -17,10 +17,17 @@ html {
     gap: 20px;
 }
 
+.zoom {
+    -moz-box-shadow: 0 0 10px #1f2937;
+    -webkit-box-shadow: 0 0 10px #1f2937;
+    box-shadow: 0 0 12px #1f2937;
+}
+
 .zoom:hover {
-    -moz-box-shadow: 0 0 20px white;
-    -webkit-box-shadow: 0 0 20px white;
-    box-shadow: 0 0 20px #ccc;
+    transform: scale(1.05);
+    -moz-box-shadow: 0 0 10px #d1d5db;
+    -webkit-box-shadow: 0 0 10px #d1d5db;
+    box-shadow: 0 0 10px #d1d5db;
 }
 
 #typing-text {
