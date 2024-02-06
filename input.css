@@ -18,16 +18,16 @@ html {
 }
 
 .zoom {
-    -moz-box-shadow: 0 0 10px #1e293b;
-    -webkit-box-shadow: 0 0 10px #1e293b;
-    box-shadow: 0 0 12px #1e293b;
+    -moz-box-shadow: 0 0 15px #1e293b;
+    -webkit-box-shadow: 0 0 15px #1e293b;
+    box-shadow: 0 0 15px #1e293b;
 }
 
 .zoom:hover {
     transform: scale(1.05);
-    -moz-box-shadow: 0 0 10px #d1d5db;
-    -webkit-box-shadow: 0 0 10px #d1d5db;
-    box-shadow: 0 0 10px #d1d5db;
+    -moz-box-shadow: 0 0 15px #d1d5db;
+    -webkit-box-shadow: 0 0 15px #d1d5db;
+    box-shadow: 0 0 15px #d1d5db;
 }
 
 #typing-text {
