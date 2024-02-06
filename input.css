@@ -18,9 +18,9 @@ html {
 }
 
 .zoom {
-    -moz-box-shadow: 0 0 10px #1f2937;
-    -webkit-box-shadow: 0 0 10px #1f2937;
-    box-shadow: 0 0 12px #1f2937;
+    -moz-box-shadow: 0 0 10px #1e293b;
+    -webkit-box-shadow: 0 0 10px #1e293b;
+    box-shadow: 0 0 12px #1e293b;
 }
 
 .zoom:hover {
