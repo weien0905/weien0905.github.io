@@ -616,6 +616,10 @@ video {
   width: 66.666667%;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -878,14 +882,6 @@ html {
      object-fit: cover;
 }
 
-#profile-pic {
-  transition: all .5s;
-}
-
-#profile-pic:hover {
-  transform: scale(1.05);
-}
-
 .arrows path {
   stroke: gainsboro;
   fill: transparent;
@@ -955,6 +951,11 @@ html {
     margin-bottom: 2rem;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -969,6 +970,10 @@ html {
 
   .md\:w-3\/5 {
     width: 60%;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:flex-row {

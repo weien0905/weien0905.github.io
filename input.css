@@ -102,14 +102,6 @@ html {
     object-fit: cover;
 }
 
-#profile-pic {
-    transition: all .5s;
-}
-
-#profile-pic:hover {
-    transform: scale(1.05);
-}
-
 .arrows path {
 	stroke: gainsboro;
 	fill: transparent;
