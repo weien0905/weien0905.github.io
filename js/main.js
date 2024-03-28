@@ -34,8 +34,8 @@ window.addEventListener('scroll', setActiveSection);
 const project_observer = new IntersectionObserver(async (entries) => {
     for (let i = 0; i < entries.length; i++) {
         if (entries[i].isIntersecting) {
-            await new Promise(r => setTimeout(r, 200));
-            entries[i].target.classList.add('show-project');        
+            entries[i].target.classList.add('show-project');     
+            await new Promise(r => setTimeout(r, 200));   
         }
         
     }
@@ -43,9 +43,9 @@ const project_observer = new IntersectionObserver(async (entries) => {
 
 const description_observer = new IntersectionObserver(async (entries) => {
     for (let i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) {
-            await new Promise(r => setTimeout(r, 500));
-            entries[i].target.classList.add('show-logo');        
+        if (entries[i].isIntersecting) {  
+            entries[i].target.classList.add('show-description');     
+            await new Promise(r => setTimeout(r, 500));   
         }
         
     }
@@ -53,9 +53,9 @@ const description_observer = new IntersectionObserver(async (entries) => {
 
 const logo_observer = new IntersectionObserver(async (entries) => {
     for (let i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) {
-            await new Promise(r => setTimeout(r, 300));
-            entries[i].target.classList.add('show-logo');        
+        if (entries[i].isIntersecting) {           
+            entries[i].target.classList.add('show-logo');      
+            await new Promise(r => setTimeout(r, 300));  
         }
         
     }
